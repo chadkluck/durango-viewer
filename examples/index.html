@@ -1,1 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Example and Test Page for Durango Viewer</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../durango-viewer.css">
+</head>
 
+<body>
+
+<style>
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	margin-bottom: 50px !important;
+}
+
+.myColumn {
+	width: 100%;
+	max-width: 600px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+</style>
+
+<div class="myColumn">
+<h1>Durango Viewer</h1>
+<h2>Example and Test Page</h2>
+
+<p><strong>NOTE:</strong> This is a beta project so the tags used by it may and will change. However, if not used as a plugin the code can be dissected and pieces put into your own code. The code is not yet complete, clean, nor optimized for production. It is here to learn from. Though great care has been used in testing, I am not responsible for errors in the code at this time.</p>
+
+<p>Durango Viewer turns pre-defined links to large images into previews and when followed displays the image in a lightbox. Eventually the hope is that it will create slideshows from WordPress galleries and auto responsive video and images.</p>
+
+<h3>Key Features:</h3>
+<ul>
+<li>Responsive</li>
+<li>Accessible</li>
+<li>Gracefully degrade if NOSCRIPT</li>
+<li>Lightweight</li>
+<li>Loads images behind the scenes</li>
+</ul>
+
+<p>The large &quot;Preview&quot; images are loaded in the background and do not hold up the page. If data attributes are used we can display an appropriate sized placeholder to prevent page jumping, load the right sized image, and only load the lightbox image when requested.</p>
+
+<p>Previews and links are already implemented, galleries will come next once the current code is cleaned and implemented.</p>
+
+<p>Image Light is not meant to be used in all image situations. It is best used when dealing with images that within context are generally viewed in larger formats outside the normal context of the page.</p>
+
+<h3>Example: Art Piece 1</h3>
+<p>Below is an example of a piece of art created by the world renouned artist Art I. St. Arthur. In the actual source of the page it is but a simple Anchor tag placed within a DIV, but JavaScript transforms it into a masterful preview that is responsive and accessible. Without JavaScript it remains a link, but still usable as a portal, linking directly to the image.</p>
+
+<div class="image-light">
+    <a href="example-images/base.png" target="_blank" data-alt="Example of ALT" data-src="example-images/base-preview.png" data-src-dim="608,468" data-src-step="false">Base by Art I. St. Arthur</a>
+</div>
+
+<p>To show we don't overshadow any elements, here is some explanatory text. The image above was created by using the following static HTML code:</p>
+<textarea>
+<div class="image-light">
+    <a href="example-images/base.png" target="_blank" data-src="example-images/base-preview.png" data-src-dim="608,468" data-src-step="false">Base by Art I. St. Arthur</a>
+</div>
+</textarea>
+
+<h3>Example 2: Art Piece Titled &quot;Level 2&quot;</h3>
+<p>What is Level 1? It is a statement so bold and jarring that it must be made through art. The white text on the vibrant background gives the piece another level of dimension. It decorates it and calls out &quot;Level 1! I am Level 1!&quot; while just stating, quite minimalisticly, &quot;Level 1&quot;demonstrating Art I. St. Arthur's vision of his vision.</p>
+
+<div class="image-light">
+    <a href="example-images/level1.png" target="_blank" data-src="example-images/level1-preview.png" data-src-step="false">Level 1 by Art I. St. Arthur</a>
+</div>
+
+<p>More text to show we aren't overshadowing by floats, z-index, or other misplaced styles and tags.</p>
+
+<h3>Example 3: Art Piece Titled &quot;Level 1&quot;</h3>
+<p>As a follow-up to Level 1 we enter the vision of Level 2. We are left to wonder is Art lifting us up to higher levels, or are the levels he's exposing us to sub-terranian? Perhaps we beleive we are being raised up when in fact we are finding ourselves burried under the dirt and slime of society which is often the case in Mr. St. Arthur's work. No one comes out unscathed. Also note the use of the font Comic Sans, as if Mr. St. Arthur is laughing at our assumptions.</p>
+
+<div class="image-light">
+    <a href="example-images/level2.png" target="_blank" data-src="example-images/level2-preview.png" data-src-step="false">Level 2 by Art I. St. Arthur</a>
+</div>
+
+<p>Text after element.</p>
+
+<h3>Example 3b: Level 2, Constrained</h3>
+<p>Sometimes the world closes in around us and Art St. Arthur had his share of experiences of feeling crowded as he refused to sleep on top of beds, instead crawling below each night to ponder and let his artistic mind conjure up a world outside. A world outside he never saw as he shuttered all windows and became a recluse at the age of eight, remaining so until his death at age 96 during a night terror. Perhaps he was taken too soon, before he had enough time to ever experience the beauty of a world not so different than the one he visited and painted from his mind.</p>
+
+<div class="image-light" style="width: 50%">
+    <a href="example-images/level2.png" target="_blank" data-src="example-images/level2-preview.png" data-src-step="false">Level 2 Constrained by Art I. St. Arthur</a>
+</div>
+
+<h3>Example 4: The Wait</h3>
+<p>Mr. St. Arthur was facinated by movement, letting clocks and slow turning ceiling fans mesmorize him. He embraced his 900 baud modem and 300MHz computer well into the 21st century. He'd watch circles and dots gently rotate as he purposefully waited. This piece of art is purposefully demonstrating the passionate wait. Will it load? In fact, it won't, as it is a demonstration of what happens not only if an image is slow to load, but if it fails to load. However, the feeling of anticipation still consumes us, much like Pavlov's Dogs. However, we can only sit and wait for our treat.</p>
+
+<div class="image-light">
+    <a href="example-images/the-wait.png" target="_blank" data-src="example-images/the-wait-preview.png" data-src-step="false">The Wait, by Art I. St. Arthur will never load</a>
+</div>
+
+<p>And smaller:</p>
+<div class="image-light" style="width: 33%">
+    <a href="example-images/the-wait.png" target="_blank" data-src="example-images/the-wait-preview.png" data-src-step="false">The Constrained Wait, by Art I. St. Arthur will never load</a>
+</div>
+
+<p>Large again but with alt:</p>
+<div class="image-light">
+    <a href="example-images/the-wait.png" target="_blank" data-alt="Example" data-src="example-images/the-wait-preview.png" data-src-step="false">The Wait, by Art I. St. Arthur will never load</a>
+</div>
+
+<p>And smaller, with alt:</p>
+<div class="image-light" style="width: 33%">
+    <a href="example-images/the-wait.png" target="_blank" data-alt="Example" data-src="example-images/the-wait-preview.png" data-src-step="false">The Constrained Wait, by Art I. St. Arthur will never load</a>
+</div>
+
+<p>Text after element</p>
+
+
+<h3>Links to Images in Lightbox</h3>
+<!-- https://mor10.com/power-of-wordpress-image-metadata/ -->
+<!-- http://webaim.org/techniques/alttext/#basics -->
+
+<p>We don't need to display images as previews, we can also just provide a link that displays the lightbox.</p>
+
+<p>Here is Art I. St. Arthur's final masterpiece titled &quot;Map&quot; which he was found holding in his hands under his bed after the cold grip of death reached through his shuttered windows and took him. As if it were a premonition, it is a map which speaks strongly to where our spirit resides.</p>
+<p> Here is a <a href="example-images/map.png" target="_blank" class="image-light-map">Map of where you are</a></p>
+</div>
+
+
+<style>
+
+textarea {
+  width: 100%;
+  min-height: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #444;
+  padding: 5px;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.hiddendiv {
+  display: none;
+  white-space: pre-wrap;
+  width: 100%;
+  min-height: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  padding: 5px;
+  word-wrap: break-word;
+}
+</style>
+<script>
+$(function() {
+  var txt = $('textarea'),
+    hiddenDiv = $(document.createElement('div')),
+    content = null;
+
+  txt.addClass('txtstuff');
+  hiddenDiv.addClass('hiddendiv common');
+
+  $('body').append(hiddenDiv);
+
+  txt.on('keyup', function () {
+
+    content = $(this).val();
+
+    content = content.replace(/\n/g, '<br>');
+    hiddenDiv.html(content + '<br class="lbr">');
+
+    $(this).css('height', hiddenDiv.height());
+
+  });
+});
+</script>
+
+<script src="../durango-viewer.js"></script>
+
+</body>
+</html>
