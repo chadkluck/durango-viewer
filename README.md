@@ -13,4 +13,4 @@ Durango Viewer turns pre-defined links to large images into previews and when fo
 * Loads images behind the scenes
 
 ## Example in Action:
-Head over to prod.63klabs.net/durango/examples to see it in action.
+Head over to release.63klabs.net/durango/examples to see it in action.
