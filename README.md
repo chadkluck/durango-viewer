@@ -11,3 +11,6 @@ Durango Viewer turns pre-defined links to large images into previews and when fo
 * Gracefully degrade if NOSCRIPT
 * Lightweight
 * Loads images behind the scenes
+
+## Example in Action:
+Head over to prod.63klabs.net/durango/examples to see it in action.
